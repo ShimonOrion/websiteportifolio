@@ -9,10 +9,67 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Portfólio Full Stack - Daniel Bacelar</title>
   </head>
   <body>
+    <div class="db-preloader">
+      <div class="db-preloader-inner">
+        <img src="images/preloader.png" alt="Logo Full Stack Daniel Bacelar" />
+        <p class="db-text-violet">Aguarde um momento, iniciando sistemas...</p>
+      </div>
+    </div>
+    <div class="db-overlay"></div>
+    <div class="db-modal db-bg-black">
+      <div class="db-modal-header">
+        <h1 class="db-title db-text-violet">Solicite um orçamento</h1>
+        <button class="db-close-modal">X</button>
+      </div>
+      <div class="db-modal-body">
+       <div class="row">
+        <div class="col-sm-12">
+           <p class="db-text-light">Por favor informe os dados e eu entratei em contato com você o mais breve possível</p>
+        </div>
+       </div>
+       <div class="row db-mar-top-15">
+        <div class="col-sm-12">
+          <form class="db-form">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 db-mar-bottom-15">
+                <label for="Nome" class="db-label db-text-light">Nome:</label>
+                <input type="text" nome="Nome" id="db-nome" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-6 db-mar-bottom-15">
+                <label for="Email" class="db-label db-text-light">Email:</label>
+                <input type="email" nome="Email" id="db-email" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-6 db-mar-bottom-15">
+                <label for="Telefone" class="db-label db-text-light">Telefone:</label>
+                <input type="tel" nome="Telefone" id="db-telefone" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-6 db-mar-bottom-15">
+                <label for="Site" class="db-label db-text-light">Site:</label>
+                <input type="text" nome="site" id="db-site" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-12 db-mar-top-15 db-mar-bottom-15">
+                <label for="Mensagem" class="db-label db-text-light">Descreva abaixo o projeto na qual você deseja fazer um orçamento:</label>
+                <textarea id="db-mensagem" name="Mensagem" class="db-textarea" rows="8" placeholder="Mensagem"></textarea>
+              </div>
+              
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-sm-12 col-md-6">
+                <button type="submit" class="db-btn db-btn-large db-btn-block db-btn-violet db-mar-top-15">Enviar</button>
+              </div>
+            </div>
+        </form>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    </div>
     <header class="db-topbar">
       <div class="db-logo">
         <img src="images/logo-db.png" alt="Logo Full Stack Daniel Bacelar" />
@@ -42,8 +99,41 @@
       </div>
       <div class="db-corner"></div>
     </div>
-    <div class="db-btn-contact"></div>
-    <div class="db-page-wrapper"></div>
+    <button class="db-btn-contact"></button>
+    <div class="db-page-wrapper">
+      <section
+        class="db-full-height db-first-section"
+        id="db-home-presentation"
+      >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-3 offset-md-2 db-display-text">
+              <h1 class="db-title db-text-violet db-title-big">Olá!</h1>
+              <p class="db-text-light">
+                Meu nome é <span class="db-text-violet">Daniel Bacelar</span>,
+                sou
+                <span class="db-text-violet"
+                  >programador Full Stack, C++ e C#.</span
+                >
+                Seja bem vindo(a) ao meu site portfólio, espero que possa
+                entender e apreciar todo o meu trabalho, funcionalidade e
+                ferramentas que aprendi e desenvolvi, fique a vontade logo a
+                baixo tem meus links de contato.
+              </p>
+              <button class="db-btn db-btn-large db-btn-violet db-mar-top-15">
+                solicite um orçamento
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="db-scroll-down">
+          <div class="db-arrow-down">
+            <img src="images/arrow-down.png" alt="Role a página" />
+          </div>
+        </div>
+      </section>
+      <section class="db-full-height"></section>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
