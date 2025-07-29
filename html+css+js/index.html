@@ -20,11 +20,11 @@
         <p class="db-text-violet">Aguarde um momento, iniciando sistemas...</p>
       </div>
     </div>
-    <div class="db-overlay"></div>
-    <div class="db-modal db-bg-black">
+    <div class="db-overlay db-toggle-modal"></div>
+    <div class="db-modal db-bg-black" id="db-modal-orcamento">
       <div class="db-modal-header">
         <h1 class="db-title db-text-violet">Solicite um orçamento</h1>
-        <button class="db-close-modal">X</button>
+        <button class="db-close-modal db-toggle-modal">X</button>
       </div>
       <div class="db-modal-body">
        <div class="row">
@@ -76,7 +76,7 @@
       </div>
       <nav class="db-menu">
         <a href="#">Home</a>
-        <a href="#">Projetos</a>
+        <a href="#">Portfólio</a>
         <a href="#">Sobre</a>
       </nav>
     </header>
@@ -102,7 +102,7 @@
     <button class="db-btn-contact"></button>
     <div class="db-page-wrapper">
       <section
-        class="db-full-height db-first-section"
+        class="db-full-height db-first-section db-no-padding"
         id="db-home-presentation"
       >
         <div class="container-fluid">
@@ -120,21 +120,75 @@
                 ferramentas que aprendi e desenvolvi, fique a vontade logo a
                 baixo tem meus links de contato.
               </p>
-              <button class="db-btn db-btn-large db-btn-violet db-mar-top-15">
+              <button class="db-btn db-btn-large db-btn-violet db-mar-top-15 db-toggle-modal">
                 solicite um orçamento
               </button>
             </div>
           </div>
         </div>
-        <div class="db-scroll-down">
+        <div class="db-scroll-down" id="db-scroll-down">
           <div class="db-arrow-down">
             <img src="images/arrow-down.png" alt="Role a página" />
           </div>
         </div>
       </section>
-      <section class="db-full-height"></section>
-    </div>
+      <section class="db-full-height" id="db-portlio">
+        <div class="container-fluid db-no-padding">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="db-portlio-navigator">
+                 <div class="db-navigator-counter">
+                  <span class="db-text-violet">01</span>
+                 </div>
+               <nav class="db-item-navigator">
+                <a href="#" class="db-item-active"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+               </nav>
+                <div class="db-items-next-prev db-no-radius-left">
+                  <div class="db-item-prev"><ion-icon name="caret-back-outline"></ion-icon></div>
+                  <div class="db-item-counter"><span>01</span>/<span>05</span></div>
+                  <div class="db-item-next"><ion-icon name="caret-forward-outline"></ion-icon></div>
+                </div>  
+              </div>             
+            </div>
+            <div class="col-sm-10 db-slider">
+              <div class="db-slider-container db-full-height">
+                <ur class="db-slider-list">
+                  <li class="db-slider-item red">
 
+                  </li>
+                  <li class="db-slider-item yellow">
+                    
+                  </li>
+                  <li class="db-slider-item blue">
+                    
+                  </li>
+                  <li class="db-slider-item purple">
+                    
+                  </li>
+                  <li class="db-slider-item green">
+                    
+                  </li>
+                </ur>
+                <div class="row"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    
+    
     <script src="js/main.js"></script>
+
   </body>
 </html>
