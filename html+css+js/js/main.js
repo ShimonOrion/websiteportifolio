@@ -1,3 +1,5 @@
+/* Testes */
+
 /*  Declarando Variáveis   */
 
 var btnContact = document.querySelector(".db-btn-contact");
@@ -41,42 +43,4 @@ var waypointScrollDown = new Waypoint({
     myScrollDown.classList.toggle("db-fade-out");
   },
   offset: "80%",
-});
-
-// Portfolio Slider
-
-// declarando variáveis do slider
-
-var sliderContainer = document.querySelector(".db-slider-container");
-var sliderList = document.querySelector(".db-slider-list");
-var sliderItem = document.querySelectorAll(".db-slider-item");
-var sliderListWidth = null;
-
-// Capturando larguras individuais
-
-var containerWidth = sliderContainer.parentElement.offsetWidth;
-
-// Passando larguras dinamicamente
-sliderContainer.style.width = containerWidth + "px";
-
-for (var p = 0; p < sliderItem.length; p++) {
-  sliderItem[p].style.width = containerWidth + "px";
-
-  var sliderItemWidth = sliderItem[p].offsetWidth;
-  sliderListWidth += sliderItemWidth;
-}
-
-sliderList.style.width = sliderListWidth + "px";
-
-// Fazendo animação do slider onClick
-
-var prevItem = document.querySelector(".db-item-prev");
-var nextItem = document.querySelector(".db-item-next");
-
-nextItem.addEventListener("click", function () {
-  anime({
-    targets: sliderList,
-    translateX: -1000,
-  });
-  console.log("clicou?");
 });

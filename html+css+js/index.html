@@ -108,7 +108,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-12 col-md-3 offset-md-2 db-display-text">
-              <h1 class="db-title db-text-violet db-title-big">Olá!</h1>
+              <h1 class="db-title db-text-violet db-title-xlarge">Olá!</h1>
               <p class="db-text-light">
                 Meu nome é <span class="db-text-violet">Daniel Bacelar</span>,
                 sou
@@ -141,35 +141,49 @@
                   <span class="db-text-violet">01</span>
                  </div>
                <nav class="db-item-navigator">
-                <a href="#" class="db-item-active"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#" class="db-item-active" data-nav="1"></a>
+                <a href="#" data-nav="2"></a>
+                <a href="#" data-nav="3"></a>
+                <a href="#" data-nav="4"></a>
+                <a href="#" data-nav="5"></a>
                </nav>
                 <div class="db-items-next-prev db-no-radius-left">
                   <div class="db-item-prev"><ion-icon name="caret-back-outline"></ion-icon></div>
-                  <div class="db-item-counter"><span>01</span>/<span>05</span></div>
+                  <div class="db-item-counter"><span class="db-current-slide">01</span>/<span class="db-total-slide">05</span></div>
                   <div class="db-item-next"><ion-icon name="caret-forward-outline"></ion-icon></div>
                 </div>  
               </div>             
             </div>
             <div class="col-sm-10 db-slider">
               <div class="db-slider-container db-full-height">
-                <ur class="db-slider-list">
-                  <li class="db-slider-item red">
+                <ur class="db-slider-list db-full-height">
+                  <li class="db-slider-item">
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <div class="db-portifolio-item-info db-text-light">
+                          <h1 class="db-title-big db-mar-bottom-30 db-title">Neekem tecnologia de ponta!</h1>
+                          <p class="db-mar-bottom-30">Desenhando, estruturando e realiznado sonhos.</p>
+                          <button class="db-btn-large db-btn-violet">Ver projeto</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="db-portifolio-item-thumb">
+                          <img src="images/" alt="Neekem Projeto EV" title="Neekem Projeto EV">
+                        </div>
+                      </div>
+                    </div>
 
                   </li>
-                  <li class="db-slider-item yellow">
+                  <li class="db-slider-item">
                     
                   </li>
-                  <li class="db-slider-item blue">
+                  <li class="db-slider-item">
                     
                   </li>
-                  <li class="db-slider-item purple">
+                  <li class="db-slider-item">
                     
                   </li>
-                  <li class="db-slider-item green">
+                  <li class="db-slider-item">
                     
                   </li>
                 </ur>
@@ -186,9 +200,16 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
-    
-    
+
+    <script src="js/anime.iife.min.js"></script>
+
+    <script>
+     const { animate } = anime;
+    </script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+
+
 
   </body>
 </html>

@@ -391,7 +391,6 @@ label {
 }
 
 .db-item-navigator a.db-item-active {
-  width: 90px;
   background-color: #830cc4;
 }
 
@@ -436,7 +435,6 @@ ion-icon {
 }
 
 .db-slider-container {
-  background-color: #fff;
   display: block;
   overflow: hidden;
 }
@@ -445,7 +443,6 @@ ion-icon {
   width: auto;
   height: 700px;
   display: block;
-  background-color: brown;
   list-style: none;
 }
 
@@ -453,6 +450,28 @@ ion-icon {
   display: block;
   height: 500px;
   float: left;
+  margin-top: calc(26vh - 75px);
+}
+
+.db-portifolio-item-info {
+  width: 100%;
+  display: table;
+  margin-top: 70px;
+}
+
+.db-portifolio-item-thumb {
+  width: 100%;
+  background-color: #212121;
+  display: table;
+  padding: 75px 0;
+}
+
+.db-portifolio-item-thumb img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: -75px;
 }
 
 @media screen and (min-width: 576px) {
@@ -581,6 +600,10 @@ ion-icon {
 }
 
 .db-title-big {
+  font-size: 64px;
+}
+
+.db-title-xlarge {
   font-size: 120px;
 }
 
@@ -634,6 +657,24 @@ ion-icon {
   margin-left: 15px;
 }
 
+.db-mar-30 {
+  margin: 30px;
+}
+
+.db-mar-top-30 {
+  margin-top: 30px;
+}
+
+.db-mar-bottom-30 {
+  margin-bottom: 30px;
+}
+.db-mar-right-30 {
+  margin-right: 30px;
+}
+.db-mar-left-30 {
+  margin-left: 30px;
+}
+
 .db-pad-15 {
   padding: 15px;
 }
@@ -650,6 +691,24 @@ ion-icon {
 }
 .db-pad-left-15 {
   padding-left: 15px;
+}
+
+.db-pad-30 {
+  padding: 30px;
+}
+
+.db-pad-top-30 {
+  padding: 30px;
+}
+
+.db-pad-bottom-30 {
+  padding-bottom: 30px;
+}
+.db-pad-right-30 {
+  padding-right: 30px;
+}
+.db-pad-left-30 {
+  padding-left: 30px;
 }
 
 .db-full-height {
