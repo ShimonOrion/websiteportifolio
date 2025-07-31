@@ -196,6 +196,7 @@ label {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 900;
   }
 
   .db-logo {
@@ -465,14 +466,18 @@ ion-icon {
   list-style: none;
 }
 
-.db-slider-item {
+.db-slider-list .db-slider-item {
   display: block;
   height: 500px;
   float: left;
   margin-top: calc(26vh - 75px);
 }
 
-.db-portfolio-item-info {
+.db-portfolio-list .db-portfolio-item {
+  margin-bottom: 100px;
+}
+
+.db-slider-list .db-portfolio-item-info {
   width: calc(100% - 75px);
   display: table;
   margin-top: 70px;
@@ -481,20 +486,30 @@ ion-icon {
   left: -75px;
 }
 
-.db-portfolio-item-thumb {
+.db-portfolio-list .db-portfolio-item-info {
+  width: calc(100% - 105px);
+}
+
+.db-portfolio-list {
+  list-style: none;
+}
+
+.db-slider-list .db-portfolio-item-thumb,
+.db-portfolio-list .db-portfolio-item-thumb {
   width: 100%;
   display: table;
   padding: 75px 0 19px 0;
   position: relative;
 }
 
-.db-portfolio-item-thumb > button {
+.db-slider-list .db-portfolio-item-thumb > button,
+.db-portfolio-list .db-portfolio-item-thumb > button {
   margin-top: 17px;
   margin-right: 75px;
   float: right;
 }
 
-.db-portfolio-item-box {
+.db-slider-list .db-portfolio-item-box {
   width: 100%;
   height: 100%;
   display: block;
@@ -506,13 +521,73 @@ ion-icon {
   transform-origin: right;
 }
 
-.db-portfolio-item-thumb img {
+.db-portfolio-list .db-portfolio-item-box {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #212121;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.db-slider-list .db-portfolio-item-thumb img {
   width: 100%;
   max-width: 100%;
   height: auto;
   position: relative;
   left: -75px;
   transform: scale(0);
+}
+
+.db-portfolio-list .db-portfolio-item-thumb img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: -75px;
+}
+
+/* Portfolio */
+
+.db-section-offset-top {
+  margin-top: 130px;
+}
+
+.db-portfolio-list .db-portfolio-item:nth-child(odd) .db-portfolio-item-info {
+  text-align: right;
+  margin-top: 70px;
+}
+
+.db-portfolio-list
+  .db-portfolio-item:nth-child(odd)
+  .db-portfolio-item-info
+  button {
+  float: right;
+}
+
+.db-portfolio-list .db-portfolio-item:nth-child(even) > .row {
+  flex-direction: row-reverse;
+}
+
+.db-portfolio-list .db-portfolio-item:nth-child(even) .db-portfolio-item-info {
+  margin-left: 105px;
+  margin-top: 70px;
+}
+
+.db-portfolio-list
+  .db-portfolio-item:nth-child(even)
+  .db-portfolio-item-thumb
+  button {
+  float: left;
+  margin-left: 75px;
+}
+
+.db-portfolio-list
+  .db-portfolio-item:nth-child(even)
+  .db-portfolio-item-thumb
+  img {
+  left: 75px;
 }
 
 @media screen and (min-width: 576px) {
