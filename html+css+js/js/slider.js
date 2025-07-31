@@ -85,6 +85,24 @@ var setActiveNav = function () {
   }
 };
 
+var setActivSlide = function () {
+  for (var sld = 0; sld < sliderItem.length; sld++) {
+    let mySlideNum = parseInt(sliderItem[sld].getAttribute("data-slide"));
+    if (mySlideNum === currentCounter) {
+      sliderItem[sld].classList.add("db-slide-active");
+      sliderItem[sld]
+        .querySelector(".db-portfolio-item-box")
+        .classList.add("db-scale-right");
+      sliderItem[sld]
+        .querySelector(".db-portfolio-item-thumb img")
+        .classList.add("db-scale-up");
+      sliderItem[sld]
+        .querySelector(".db-portfolio-item-info")
+        .classList.add("db-fade-from-left");
+    }
+  }
+};
+
 // Remove active nav
 var changeActive = function () {
   for (var rm = 0; rm < navItems.length; rm++) {
@@ -92,7 +110,21 @@ var changeActive = function () {
     animate(navItems[rm], { width: 20 + "px" });
   }
 
+  for (var rms = 0; rms < sliderItem.length; rms++) {
+    sliderItem[rms].classList.remove("db-slide-active");
+    sliderItem[rms]
+      .querySelector(".db-portfolio-item-box")
+      .classList.remove("db-scale-right");
+    sliderItem[rms]
+      .querySelector(".db-portfolio-item-thumb img")
+      .classList.remove("db-scale-up");
+    sliderItem[rms]
+      .querySelector(".db-portfolio-item-info")
+      .classList.remove("db-fade-from-left");
+  }
+
   setActiveNav();
+  setActivSlide();
 };
 
 // Actions
