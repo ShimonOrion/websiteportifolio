@@ -258,7 +258,8 @@ label {
     line-height: 24px;
   }
 
-  .db-social-links {
+  .db-social-links,
+  .db-social-links-circle {
     width: 100%;
     height: 45px;
     display: block;
@@ -266,10 +267,34 @@ label {
     left: -12px;
   }
 
-  .db-social {
+  .db-social-links-circle {
+    left: 0;
+  }
+
+  .db-social,
+  .db-social-links-circle .db-social {
     width: 45px;
     height: 45px;
     display: inline-block;
+  }
+
+  .db-social-links-circle .db-social {
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.2s ease-out;
+  }
+
+  .db-social-links-circle .db-social ion-icon {
+    height: 45px;
+    transition: all 0.2s ease-out;
+  }
+
+  .db-social-links-circle .db-social:hover {
+    background-color: #000;
+  }
+
+  .db-social-links-circle .db-social:hover ion-icon {
+    color: #830cc4;
   }
 
   .db-social > img {
@@ -590,6 +615,13 @@ ion-icon {
   left: 75px;
 }
 
+/* Sobre */
+
+#db-avatar-sobre img {
+  position: relative;
+  left: -15px;
+}
+
 @media screen and (min-width: 576px) {
 }
 
@@ -725,6 +757,12 @@ ion-icon {
 
 .db-title {
   font-family: "abril fatface", serif;
+  font-weight: normal;
+}
+
+.db-subtitle {
+  font-family: "Open Sans", serif;
+  font-weight: 800;
 }
 
 .db-title-big {
@@ -850,6 +888,43 @@ ion-icon {
 
 .db-no-padding {
   padding: 0 !important;
+}
+
+.db-box-img {
+  width: 100%;
+  display: table;
+}
+
+.db-img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.db-page-list {
+  list-style: none;
+  font-family: "open sans", sans-serif;
+}
+
+.db-page-list > li {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.db-page-list > li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  background-color: #830cc4;
 }
 
 /* Classes de Comportamento */
