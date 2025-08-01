@@ -622,6 +622,14 @@ ion-icon {
   left: -15px;
 }
 
+/* Detalhes do projeto */
+
+.db-hero {
+  height: 500px;
+  display: block;
+  background-image: url("../pages/portfolio/img/");
+}
+
 @media screen and (min-width: 576px) {
 }
 
