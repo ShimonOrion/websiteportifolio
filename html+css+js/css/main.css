@@ -716,10 +716,39 @@ ion-icon {
 }
 
 .da-gallery-frame-inner {
-  width: 100%;
+  width: 1280px;
   height: 100%;
   display: block;
   position: relative;
+  top: 100px;
+  left: -110%;
+}
+
+.db-gallery-frame-container .db-items-next-prev {
+  width: 170px;
+  margin: 145px auto 0 auto;
+}
+
+.db-close-gallery {
+  width: 45px;
+  height: 45px;
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: -60px;
+  background-color: #000;
+  border-radius: 50%;
+  border: none;
+  z-index: 1200;
+}
+
+.db-close-gallery ion-icon {
+  color: #830cc4;
+  width: 40px;
+  height: 44px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
 }
 
 img.db-gallery-frame {
