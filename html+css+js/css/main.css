@@ -913,6 +913,10 @@ img.db-gallery-frame {
   font-weight: 800;
 }
 
+.db-title-low {
+  font-size: 24px;
+}
+
 .db-title-medium {
   font-size: 48px;
 }
