@@ -5,6 +5,9 @@
 var btnContact = document.querySelector(".db-btn-contact");
 var contactInfo = document.querySelector(".db-contact-info");
 var toggleModal = document.querySelectorAll(".db-toggle-modal");
+var toggleMenu = document.querySelectorAll(".db-toggle-menu");
+var menuMobile = document.querySelector(".db-menu-mob");
+var btnMenuIcon = document.querySelector(".db-btn-mob ion-icon");
 
 /*  Page Preloader  */
 
@@ -21,6 +24,22 @@ btnContact.addEventListener("click", function () {
 
   this.classList.toggle("db-change-icon");
 });
+
+for (var m = 0; m < toggleMenu.length; m++) {
+  toggleMenu[m].addEventListener("click", function () {
+    var overlay = document.querySelector(".db-menu-overlay");
+    overlay.classList.toggle("db-is-open");
+    menuMobile.classList.toggle("db-menu-is-closed");
+    menuMobile.classList.toggle("db-menu-is-open");
+
+    var icon = btnMenuIcon.getAttribute("name");
+    if (icon === "close") {
+      btnMenuIcon.setAttribute("name", "menu");
+    } else {
+      btnMenuIcon.setAttribute("name", "close");
+    }
+  });
+}
 
 // Função para exibir/ocultar modal
 
