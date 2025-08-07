@@ -8,6 +8,10 @@ var btnPrev = document.querySelector(".db-item-prev");
 var currCounter = document.querySelector(".db-current-slide");
 var totalCounter = document.querySelector(".db-total-slide");
 
+var postGallery = document.querySelector(".db-post-gallery");
+var postGalleryHeight = postGallery.clientHeight;
+postGallery.style.height = postGalleryHeight - 180 + "px";
+
 var counterFormatter = function (n) {
   if (n < 10) {
     return "0" + n;

@@ -132,11 +132,11 @@ label {
   }
 
   .db-modal {
-    width: 800px;
+    width: 90%;
     display: none;
     padding: 30px;
     border-radius: 0 30px 30px 30px;
-    position: fixed;
+    position: absolute;
     top: -100%;
     left: 0;
     right: 0;
@@ -151,6 +151,11 @@ label {
     width: 100%;
     display: table;
     position: relative;
+  }
+
+  .db-modal-header h1 {
+    line-height: 28px;
+    margin-bottom: 15px;
   }
 
   .db-close-modal {
@@ -169,8 +174,8 @@ label {
   }
 
   .db-form label {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 3px;
+    font-size: 14px;
     display: inline-block;
   }
 
@@ -183,6 +188,7 @@ label {
     border: none;
     font-size: 16px;
     text-indent: 15px;
+    margin-bottom: 7px;
   }
 
   .db-field {
@@ -384,7 +390,7 @@ label {
     background-repeat: no-repeat;
     background-position: 70% bottom;
     position: relative;
-    background-size: 70% auto;
+    background-size: 75% auto;
   }
 
   .db-home-presentation h1 {
@@ -394,6 +400,10 @@ label {
 
   .db-home-presentation p {
     text-align: center;
+  }
+
+  .db-home-presentation button {
+    margin: 30px auto;
   }
 
   .db-scroll-down {
@@ -449,11 +459,13 @@ label {
 /* Home - portfólio */
 
 .db-portfolio-navigator {
-  width: 145px;
-  height: 400px;
+  width: 250px;
+
   display: table;
   position: absolute;
-  top: 26vh;
+
+  top: 90%;
+  z-index: 900;
 }
 
 .db-navigator-counter {
@@ -507,7 +519,7 @@ label {
   width: 100%;
   height: 45px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #212121;
   border-radius: 23px;
@@ -542,20 +554,20 @@ ion-icon {
 .db-slider-container {
   display: block;
   overflow: hidden;
+  padding-bottom: 120px;
 }
 
 .db-slider-list {
   width: auto;
-  height: 700px;
   display: block;
   list-style: none;
 }
 
 .db-slider-list .db-slider-item {
   display: block;
-  height: 500px;
+  height: auto;
   float: left;
-  margin-top: calc(26vh - 75px);
+  margin-top: 0;
 }
 
 .db-portfolio-list .db-portfolio-item {
@@ -563,31 +575,49 @@ ion-icon {
 }
 
 .db-slider-list .db-portfolio-item-info {
-  width: calc(100% - 75px);
+  width: 100%;
   display: table;
-  margin-top: 70px;
+  margin-top: 15px;
   position: relative;
   opacity: 0;
-  left: -75px;
 }
 
 .db-portfolio-list .db-portfolio-item-info {
   width: calc(100% - 105px);
 }
 
+.db-slider-list .db-portfolio-item-info p {
+  text-align: center;
+}
+
+.db-slider-list .db-portfolio-item-info a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .db-portfolio-list {
   list-style: none;
 }
 
-.db-slider-list .db-portfolio-item-thumb,
 .db-portfolio-list .db-portfolio-item-thumb {
   width: 100%;
   display: table;
   padding: 75px 0 19px 0;
   position: relative;
 }
+.db-slider-list .db-portfolio-item-thumb {
+  width: 100%;
+  display: table;
+  padding: 30px 0 19px 0;
+  position: relative;
+}
 
-.db-slider-list .db-portfolio-item-thumb > button,
+.db-slider-list .db-portfolio-item-thumb > button {
+  margin: 17px auto 0 auto;
+  float: none;
+}
+
 .db-portfolio-list .db-portfolio-item-thumb > button {
   margin-top: 17px;
   margin-right: 75px;
@@ -617,11 +647,11 @@ ion-icon {
 }
 
 .db-slider-list .db-portfolio-item-thumb img {
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   height: auto;
   position: relative;
-  left: -75px;
+  left: 5%;
   transform: scale(0);
 }
 
@@ -834,10 +864,23 @@ img.db-gallery-frame {
   font-size: 90px;
 }
 
+.db-title-big {
+  font-size: 36px;
+  text-align: center;
+}
+
+.db-full-height {
+  height: auto;
+  position: relative;
+}
+
 @media screen and (min-width: 576px) {
 }
 
 @media screen and (min-width: 768px) {
+  .db-title-big {
+    font-size: 48px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -898,10 +941,6 @@ img.db-gallery-frame {
     font-size: 120px;
   }
 
-  .db-home-presentation {
-    background-size: auto;
-  }
-
   .db-home-presentation h1 {
     margin-top: 0;
     text-align: left;
@@ -910,9 +949,110 @@ img.db-gallery-frame {
   .db-home-presentation p {
     text-align: left;
   }
+
+  .db-home-presentation button {
+    margin-left: 0;
+  }
+
+  .db-portfolio-navigator {
+    width: 145px;
+    height: 400px;
+
+    top: 26vh;
+  }
+
+  .db-slider-container {
+    padding-bottom: 0;
+  }
+
+  .db-slider-list .db-portfolio-item-thumb {
+    padding: 30px 0 19px 0;
+    margin-top: 45px;
+  }
+
+  .db-slider-list .db-portfolio-item-thumb img {
+    width: 120%;
+    max-width: 120%;
+    left: -100px;
+  }
+
+  .db-slider-list .db-portfolio-item-thumb > button {
+    margin: 17px 4% 0 0;
+    float: right;
+  }
+
+  .db-navigator-counter span {
+    font-size: 100px;
+  }
+  .db-navigator-counter::before {
+    width: 30px;
+  }
+  .db-title-big,
+  .db-slider-list .db-portfolio-item-info p {
+    text-align: left;
+  }
+  .db-slider-list .db-slider-item {
+    display: block;
+    height: 500px;
+    float: left;
+    margin-top: calc(26vh - 75px);
+  }
+  .db-slider-list .db-portfolio-item-info {
+    width: calc(100% - 75px);
+    left: -75px;
+    margin-top: 70px;
+  }
+
+  .db-slider-list .db-portfolio-item-info a {
+    display: block;
+    justify-content: center;
+  }
+
+  .db-full-height {
+    height: 100vh;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .db-modal {
+    width: 800px;
+    position: fixed;
+  }
+
+  .db-field,
+  .db-textarea {
+    margin-bottom: 15px;
+  }
+
+  .db-home-presentation {
+    background-size: auto;
+  }
+
+  .db-title-big {
+    font-size: 64px;
+  }
+
+  .db-slider-list .db-portfolio-item-thumb {
+    padding: 75px 0 19px 0;
+    margin-top: 0;
+  }
+
+  .db-slider-list .db-portfolio-item-thumb img {
+    width: 100%;
+    max-width: 100%;
+    left: -75px;
+  }
+
+  .db-slider-list .db-portfolio-item-thumb > button {
+    margin-right: 75px;
+  }
+
+  .db-navigator-counter span {
+    font-size: 120px;
+  }
+  .db-navigator-counter::before {
+    width: 35px;
+  }
 }
 
 @media screen and (min-width: 1364px) {
@@ -1010,10 +1150,6 @@ img.db-gallery-frame {
   font-size: 48px;
 }
 
-.db-title-big {
-  font-size: 64px;
-}
-
 .db-text-violet {
   color: #830cc4;
 }
@@ -1109,7 +1245,7 @@ img.db-gallery-frame {
 }
 
 .db-pad-top-30 {
-  padding: 30px;
+  padding-top: 30px;
 }
 
 .db-pad-bottom-30 {
@@ -1120,11 +1256,6 @@ img.db-gallery-frame {
 }
 .db-pad-left-30 {
   padding-left: 30px;
-}
-
-.db-full-height {
-  height: 100vh;
-  position: relative;
 }
 
 .db-first-section {

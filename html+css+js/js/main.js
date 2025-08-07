@@ -54,10 +54,6 @@ for (var i = 0; i < toggleModal.length; i++) {
   });
 }
 
-var postGallery = document.querySelector(".db-post-gallery");
-var postGalleryHeight = postGallery.clientHeight;
-postGallery.style.height = postGalleryHeight - 180 + "px";
-
 // Animando elementos com Waypoints
 var myScrollDown = document.querySelector(".db-scroll-down");
 var waypointScrollDown = new Waypoint({
