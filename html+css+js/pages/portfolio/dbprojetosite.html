@@ -29,6 +29,7 @@
       </div>
     </div>
     <div class="db-overlay db-toggle-gallery"></div>
+    <div class="db-menu-overlay db-toggle-menu"></div>
 
     <div class="db-gallery-frame-container">
       <div class="da-gallery-frame-inner">
@@ -65,6 +66,14 @@
         <a href="../sobre.html">Sobre</a>
       </nav>
     </header>
+    <button class="db-btn-mob db-toggle-menu">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+    <nav class="db-menu-mob db-menu-is-closed">
+      <a href="../../index.html">Home</a>
+      <a href="../portfolio.html">Portfólio</a>
+      <a href="../sobre.html">Sobre</a>
+    </nav>
     <div class="db-contact-info db-bg-black db-text-light">
       <div class="db-contact-info-inner">
         <h2 class="db-title db-text-violet">Contato:</h2>
@@ -93,60 +102,64 @@
       <section class="container-fluid db-hero">
         <div class="container">
           <div class="row db-text-light db-hero-inner align-items-center">
-            <div class="col-sm-12 db-hero-inner-content">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h1 class="db-title db-title-medium">
-                    Código, criatividade e crescimento.
-                  </h1>
-                </div>
-                <div class="col-sm-3">
-                  <div class="db-project-stats">
-                    <p>
-                      <span class="db-text-violet">Projeto: </span>Site
-                      Portfólio.
-                    </p>
-                    <p>
-                      <span class="db-text-violet">Foco: </span>Consilidar
-                      conhecimentos.
-                    </p>
-                    <p>
-                      <span class="db-text-violet">Habilidades: </span>CSS,
-                      HTML, JS e outros.
-                    </p>
-
-                    <button
-                      class="db-btn db-btn-medium db-btn-violet db-mar-top-30"
-                    >
-                      Visitar site
-                      <ion-icon name="arrow-redo-outline"></ion-icon>
-                    </button>
+            <div class="col-sm-12 p-0 pl-sm-3 pr-sm-3">
+              <div class="db-hero-inner-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h1 class="db-title db-title-medium">
+                      Código, criatividade e crescimento.
+                    </h1>
                   </div>
-                </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <div class="db-project-stats">
+                      <p>
+                        <span class="db-text-violet">Projeto: </span>Site
+                        Portfólio.
+                      </p>
+                      <p>
+                        <span class="db-text-violet">Foco: </span>Consilidar
+                        conhecimentos.
+                      </p>
+                      <p>
+                        <span class="db-text-violet">Habilidades: </span>CSS,
+                        HTML, JS e outros.
+                      </p>
 
-                <div class="col-sm-9">
-                  <p>
-                    A tecnologia, por sua natureza dinâmica, exige de seus
-                    profissionais o domínio técnico, a disposição contínua para
-                    o aprendizado, a adaptação e a inovação. Dessa forma, com
-                    esse olhar atento e aberto ao novo que venho construindo
-                    minha trajetória como programador: guiado pela curiosidade
-                    intelectual, pelo rigor na prática e pelo desejo constante
-                    de superação. Mantenho-me alinhado às tendências e
-                    ferramentas emergentes do setor, buscando ativamente
-                    projetos que instiguem meu senso criativo e aprofundem
-                    minhas competências.
-                  </p>
-                  <p>
-                    Atualmente, concentro meus esforços na elaboração de
-                    soluções que evidenciem minha evolução técnica, bem como
-                    expressem uma visão autoral e estratégica do
-                    desenvolvimento. Almejo integrar equipes comprometidas com a
-                    excelência e a inovação, nas quais possa contribuir de forma
-                    significativa e, ao mesmo tempo, enriquecer minha formação
-                    por meio da troca com profissionais experientes e
-                    inspiradores.
-                  </p>
+                      <button
+                        class="db-btn db-btn-medium db-btn-violet db-mar-top-30"
+                      >
+                        Visitar site
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-lg-9">
+                    <div class="db-project-description">
+                      <p>
+                        A tecnologia, por sua natureza dinâmica, exige de seus
+                        profissionais o domínio técnico, a disposição contínua
+                        para o aprendizado, a adaptação e a inovação. Dessa
+                        forma, com esse olhar atento e aberto ao novo que venho
+                        construindo minha trajetória como programador: guiado
+                        pela curiosidade intelectual, pelo rigor na prática e
+                        pelo desejo constante de superação. Mantenho-me alinhado
+                        às tendências e ferramentas emergentes do setor,
+                        buscando ativamente projetos que instiguem meu senso
+                        criativo e aprofundem minhas competências.
+                      </p>
+                      <p>
+                        Atualmente, concentro meus esforços na elaboração de
+                        soluções que evidenciem minha evolução técnica, bem como
+                        expressem uma visão autoral e estratégica do
+                        desenvolvimento. Almejo integrar equipes comprometidas
+                        com a excelência e a inovação, nas quais possa
+                        contribuir de forma significativa e, ao mesmo tempo,
+                        enriquecer minha formação por meio da troca com
+                        profissionais experientes e inspiradores.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,7 +174,7 @@
               <section class="db-post-section">
                 <div class="row">
                   <div
-                    class="col-sm-8 offset-sm-2 db-text-center db-text-light db-mar-bottom-15"
+                    class="col-sm-12 col-lg-8 offset-lg-2 db-text-center db-text-light db-mar-bottom-15"
                     data-aos-offset="300"
                     data-aos="fade-up"
                   >
@@ -202,8 +215,7 @@
                     </p>
                   </div>
                   <div
-                    class="col-sm-12 db-mar-bottom-30 rellax"
-                    data-rellax-speed="2"
+                    class="col-sm-12 db-mar-bottom-30"
                     data-aos-offset="300"
                     data-aos="fade-up"
                   >
@@ -215,8 +227,7 @@
                     />
                   </div>
                   <div
-                    class="col-sm-6 db-text-light db-mar-top-30 rellax"
-                    data-rellax-speed="1"
+                    class="col-sm-12 col-md-6 db-text-center-mob db-text-light db-mar-top-30"
                     data-aos-offset="300"
                     data-aos="fade-right"
                   >
@@ -252,7 +263,7 @@
                     </p>
                   </div>
                   <div
-                    class="col-sm-6 db-mar-top-30"
+                    class="col-sm-12 col-md-6 db-mar-top-30"
                     data-aos-offset="300"
                     data-aos="fade-left"
                   >
@@ -277,7 +288,7 @@
                 <h1
                   class="db-title db-title-medium db-text-dark db-mar-bottom-30 db-text-center"
                 >
-                  O meu portfólio
+                  Este é o meu primeiro projeto completo
                 </h1>
                 <img
                   src="../../images/portfolioend0001.png"
@@ -292,7 +303,7 @@
         <section class="db-post-section db-post-gallery">
           <div class="container db-container-fluid">
             <div class="row">
-              <div class="col-sm-4 db-mar-bottom-30">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 db-mar-bottom-30">
                 <img
                   data-item="1"
                   data-src="../../images/portfolioend0001.png"
@@ -302,7 +313,7 @@
                   class="db-img-responsive db-thumb-img"
                 />
               </div>
-              <div class="col-sm-4 db-mar-bottom-30">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 db-mar-bottom-30">
                 <img
                   data-item="2"
                   data-src="../../images/portfolioend0002.png"
@@ -312,7 +323,7 @@
                   class="db-img-responsive db-thumb-img"
                 />
               </div>
-              <div class="col-sm-4 db-mar-bottom-30">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 db-mar-bottom-30">
                 <img
                   data-item="3"
                   data-src="../../images/portfolioend0003.png"
@@ -322,7 +333,7 @@
                   class="db-img-responsive db-thumb-img"
                 />
               </div>
-              <div class="col-sm-4 db-mar-bottom-30">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 db-mar-bottom-30">
                 <img
                   data-item="4"
                   data-src="../../images/portfolioend0004.png"
@@ -332,7 +343,7 @@
                   class="db-img-responsive db-thumb-img"
                 />
               </div>
-              <div class="col-sm-4 db-mar-bottom-30">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 db-mar-bottom-30">
                 <img
                   data-item="5"
                   data-src="../../images/portfolioend0005.png"
@@ -342,7 +353,7 @@
                   class="db-img-responsive db-thumb-img"
                 />
               </div>
-              <div class="col-sm-4 db-mar-bottom-30">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 db-mar-bottom-30">
                 <img
                   data-item="6"
                   data-src="../../images/portfolioend0006.png"
