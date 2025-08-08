@@ -702,9 +702,33 @@ ion-icon {
 
 /* Sobre */
 
-#db-avatar-sobre img {
+.db-section-sobre {
+  height: calc(100% -130px);
+}
+
+.db-section-sobre .container-fluid,
+.db-section-sobre .container-fluid > row {
+  height: 100%;
+}
+
+.db-avatar-sobre {
   position: relative;
+}
+
+.db-box-img {
+  position: absolute;
   left: -15px;
+  bottom: 0;
+}
+
+.db-titulo-sobre,
+.db-info-sobre,
+.db-premios-sobre {
+  width: 100%;
+  height: auto;
+  display: table;
+  float: left;
+  margin-bottom: 30px;
 }
 
 /* Detalhes do projeto */
@@ -1143,6 +1167,16 @@ img.db-gallery-frame {
   }
   .db-gallery-frame-image {
     width: 60%;
+  }
+
+  .db-titulo-sobre {
+    width: 100%;
+  }
+  .db-info-sobre {
+    width: 100%;
+  }
+  .db-premios-sobre {
+    width: 100%;
   }
 
   .db-full-height {
