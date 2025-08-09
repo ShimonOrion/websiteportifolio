@@ -14,6 +14,8 @@
     <title>Portfólio Full Stack - Daniel Bacelar</title>
   </head>
   <body>
+    <div class="db-trigger-topbar"></div>
+    
     <div class="db-preloader">
       <div class="db-preloader-inner">
         <img src="images/preloader.png" alt="Logo Full Stack Daniel Bacelar" />
@@ -72,7 +74,7 @@
 
     </div>
     <header class="db-topbar">
-      <div class="db-logo">
+      <div class="db-logo db-logo-big">
         <img src="images/logo-db.png" alt="Logo Full Stack Daniel Bacelar" />
       </div>
       <nav class="db-menu">
@@ -279,6 +281,17 @@
     </script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      // Animando elementos com Waypoints
+     var myScrollDown = document.querySelector(".db-scroll-down");
+     var waypointScrollDown = new Waypoint({
+      element: myScrollDown,
+      handler: function () {
+       myScrollDown.classList.toggle("db-fade-out");
+     },
+      offset: "80%",
+     });
+    </script>
 
 
 

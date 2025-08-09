@@ -1,7 +1,7 @@
 var overlay = document.querySelector(".db-overlay");
 var frameImage = document.querySelector(".db-gallery-frame-image");
 var frameContainer = document.querySelector(".db-gallery-frame-container");
-var galleryImages = document.querySelectorAll(".db-thumb-img");
+var galleryImages = document.querySelectorAll(".db-gallery-box");
 var closeGallery = document.querySelectorAll(".db-toggle-gallery");
 var btnNext = document.querySelector(".db-item-next");
 var btnPrev = document.querySelector(".db-item-prev");
@@ -20,13 +20,13 @@ var counterFormatter = function (n) {
   }
 };
 
-totalCounter.innerHTML = counterFormatter(galleryImages.length - 1);
+totalCounter.innerHTML = counterFormatter(galleryImages.length);
 
 const getImageSrc = function () {
   for (var i = 0; i < galleryImages.length; i++) {
     galleryImages[i].addEventListener("click", function () {
-      var imageSrc = this.getAttribute("data-src");
-      var itemNum = this.getAttribute("data-item");
+      var imageSrc = this.querySelector("img").getAttribute("data-src");
+      var itemNum = this.querySelector("img").getAttribute("data-item");
       frameImage.setAttribute("src", imageSrc);
       frameImage.setAttribute("data-index", itemNum);
 
@@ -51,7 +51,7 @@ const nextItem = function () {
   var currItemNum = frameImage.getAttribute("data-index");
   var nextItemNum = parseInt(currItemNum) + 1;
   for (var n = 0; n < galleryImages.length; n++) {
-    var item = galleryImages[n];
+    var item = galleryImages[n].querySelector("img");
     var itemNum = parseInt(item.getAttribute("data-item"));
     if (itemNum === nextItemNum) {
       var nextSrc = item.getAttribute("data-src");
@@ -68,7 +68,7 @@ const prevItem = function () {
   var currItemNum = frameImage.getAttribute("data-index");
   var prevItemNum = parseInt(currItemNum) - 1;
   for (var p = 0; p < galleryImages.length; p++) {
-    var item = galleryImages[p];
+    var item = galleryImages[p].querySelector("img");
     var itemNum = parseInt(item.getAttribute("data-item"));
     if (itemNum === prevItemNum) {
       var prevSrc = item.getAttribute("data-src");

@@ -54,12 +54,15 @@ for (var i = 0; i < toggleModal.length; i++) {
   });
 }
 
-// Animando elementos com Waypoints
-var myScrollDown = document.querySelector(".db-scroll-down");
-var waypointScrollDown = new Waypoint({
-  element: myScrollDown,
+var triggerTopbar = document.querySelector(".db-trigger-topbar");
+var topbar = document.querySelector(".db-topbar");
+var logo = document.querySelector(".db-logo");
+var waypointTopbar = new Waypoint({
+  element: triggerTopbar,
   handler: function () {
-    myScrollDown.classList.toggle("db-fade-out");
+    topbar.classList.toggle("db-topbar-bg");
+    logo.classList.toggle("db-logo-shorten");
+    logo.classList.toggle("db-logo-big");
   },
-  offset: "80%",
+  offset: "50px",
 });

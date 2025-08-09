@@ -84,6 +84,50 @@ label {
   }
 }
 
+@keyframes topbarBg {
+  from {
+    background: transparent;
+  }
+
+  to {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+1,0+100 */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 1%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+@keyframes logoShorten {
+  from {
+    top: 0;
+  }
+  to {
+    top: -30px;
+  }
+}
+
+@keyframes logoBig {
+  from {
+    top: -30px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.db-trigger-topbar {
+  width: 1px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 130px;
+  background-color: transparent;
+}
+
 @media screen and (min-width: 320px) {
   .db-page-wrapper,
   .db-preloader {
@@ -199,11 +243,16 @@ label {
     width: 100%;
     height: 110px;
     display: block;
-    background-color: transparent;
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 900;
+    transition: all 0.2s ease-out;
+  }
+
+  .db-topbar-bg {
+    animation: topbarBg 0.2s ease-out forwards;
   }
 
   .db-logo {
@@ -213,6 +262,16 @@ label {
     margin-left: 60px;
     background-color: #830cc4;
     border-radius: 0 0 35px 0;
+    transition: all 0.2s ease-out;
+    position: relative;
+  }
+
+  .db-logo-shorten {
+    animation: logoShorten 0.2s ease-out forwards;
+  }
+
+  .db-logo-big {
+    animation: logoBig 0.2s ease-out forwards;
   }
 
   .db-logo img {
@@ -811,6 +870,29 @@ ion-icon {
   top: -180px;
 }
 
+.db-gallery-box {
+  width: auto;
+  display: block;
+  position: relative;
+}
+
+.db-gallery-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 700;
+  background-color: rgba(64, 9, 83, 0.513);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.db-gallery-box:hover::before {
+  display: block;
+  cursor: pointer;
+}
+
 .db-gallery-frame-container {
   width: 400px;
   display: none;
@@ -1200,7 +1282,7 @@ img.db-gallery-frame {
   }
 
   .db-title-big {
-    font-size: 64px;
+    font-size: 52px;
   }
 
   .db-slider-list .db-portfolio-item-thumb {
@@ -1278,6 +1360,9 @@ img.db-gallery-frame {
 }
 
 @media screen and (min-width: 1364px) {
+  .db-title-big {
+    font-size: 64px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
