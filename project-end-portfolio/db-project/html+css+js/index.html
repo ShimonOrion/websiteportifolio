@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Portfólio Full Stack - Daniel Bacelar</title>
+  </head>
+  <body>
+    <div class="db-trigger-topbar"></div>
+    
+    <div class="db-preloader">
+      <div class="db-preloader-inner">
+        <img src="images/preloader.png" alt="Logo Full Stack Daniel Bacelar" />
+        <p class="db-text-violet">Aguarde um momento, iniciando sistemas...</p>
+      </div>
+    </div>
+    <div class="db-overlay db-toggle-modal "></div>
+    <div class="db-menu-overlay  db-toggle-menu"></div>
+    <div class="db-modal db-bg-black" id="db-modal-orcamento">
+      <div class="db-modal-header">
+        <h1 class="db-title db-text-violet">Solicite um orçamento</h1>
+        <button class="db-close-modal db-toggle-modal">X</button>
+      </div>
+      <div class="db-modal-body">
+       <div class="row">
+        <div class="col-sm-12">
+           <p class="db-text-light">Por favor informe os dados e eu entratei em contato com você o mais breve possível</p>
+        </div>
+       </div>
+       <div class="row db-mar-top-15">
+        <div class="col-sm-12">
+          <form class="db-form">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 ">
+                <label for="Nome" class="db-label db-text-light">Nome:</label>
+                <input type="text" nome="Nome" id="db-nome" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-6 ">
+                <label for="Email" class="db-label db-text-light">Email:</label>
+                <input type="email" nome="Email" id="db-email" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-6 ">
+                <label for="Telefone" class="db-label db-text-light">Telefone:</label>
+                <input type="tel" nome="Telefone" id="db-telefone" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-6 ">
+                <label for="Site" class="db-label db-text-light">Site:</label>
+                <input type="text" nome="site" id="db-site" class="db-field"/>
+              </div>
+              <div class="col-sm-12 col-md-12 db-mar-top-15 ">
+                <label for="Mensagem" class="db-label db-text-light">Descreva abaixo o projeto na qual você deseja fazer um orçamento:</label>
+                <textarea id="db-mensagem" name="Mensagem" class="db-textarea" rows="8" placeholder="Mensagem"></textarea>
+              </div>
+              
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-sm-12 col-md-6">
+                <button type="submit" class="db-btn db-btn-large db-btn-block db-btn-violet db-mar-top-15">Enviar</button>
+              </div>
+            </div>
+        </form>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    </div>
+    <header class="db-topbar">
+      <div class="db-logo db-logo-big">
+        <img src="images/logo-db.png" alt="Logo Full Stack Daniel Bacelar" />
+      </div>
+      <nav class="db-menu">
+        <a href="#">Home</a>
+        <a href="portfolio/index.html">Portfólio</a>
+        <a href="sobre/index.html">Sobre</a>
+      </nav>
+      
+    </header>
+    <button class="db-btn-mob db-toggle-menu"><ion-icon name="menu-outline"></ion-icon></button>
+    <nav class="db-menu-mob db-menu-is-closed" >
+        <a href="#">Home</a>
+        <a href="portfolio/index.html">Portfólio</a>
+        <a href="sobre/index.html">Sobre</a>
+    </nav>
+    <div class="db-contact-info db-bg-black db-text-light">
+      <div class="db-contact-info-inner">
+        <h2 class="db-title db-text-violet">Contato:</h2>
+        <p>Email: devdbprogrammer@gmail.com</p>
+        <p>Telefone: (19) 99999-9999</p>
+        <div class="db-social-links">
+          <a href="#" target="_blank" class="db-social">
+            <img src="images/linkedin.png" alt="Linkedin"
+          /></a>
+          <a href="#" target="_blank" class="db-social">
+            <img src="images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="#" target="_blank" class="db-social">
+            <img src="images/x.png" alt="X"
+          /></a>
+          <a href="#" target="_blank" class="db-social">
+            <img src="images/reddit.png" alt="reddit"
+          /></a>
+        </div>
+      </div>
+      <div class="db-corner"></div>
+    </div>
+    <button class="db-btn-contact"></button>
+    <div class="db-page-wrapper">
+      <section
+        class="db-full-height db-first-section db-no-padding db-home-presentation"
+        id="db-home-presentation"
+      >
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-10 offset-md-1 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2 db-display-text">
+              <h1 class="db-title db-text-violet db-title-xlarge">Olá!</h1>
+              <p class="db-text-light">
+                Sou<span class="db-text-violet"> Daniel Bacelar</span>,<span class="db-text-violet"> programador</span> em constante evolução, apaixonado por tecnologia e movido por desafios que estimulam a criatividade e a resolução de problemas. Com formação em <span class="db-text-violet">Engenharia da Computação</span> e experiência prática no desenvolvimento de soluções reais, busco unir conhecimento técnico e visão inovadora para criar projetos que fazem a diferença. Este portfólio é um reflexo do meu comprometimento com a excelência, aprendizado contínuo e a vontade de transformar ideias em soluções funcionais, conheça mais sobre minha trajetória, habilidades e projetos.
+              </p>
+              <button class="db-btn db-btn-large db-btn-violet db-mar-top-15 db-toggle-modal">
+                solicite um orçamento
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="db-scroll-down" id="db-scroll-down">
+          <div class="db-arrow-down">
+            <img src="images/arrow-down.png" alt="Role a página" />
+          </div>
+        </div>
+      </section>
+      <section class="db-full-height" id="db-portlio">
+        <div class="container-fluid db-no-padding">
+          <div class="row">
+            <div class="col-sm-12 d-block d-sm-block d-lg-none  db-mar-bottom-30 db-pad-top-30">
+              <h2 class="db-title-big db-text-violet db-title db-text-center">Projetos Selecionados</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-2 ">
+              <div class="db-portfolio-navigator ">
+                 <div class="db-navigator-counter d-none d-sm-none d-lg-block">
+                   <span class="db-text-violet">01</span>
+                 </div>
+               <nav class="db-item-navigator d-none d-sm-none d-lg-block">
+                 <a href="#" class="db-item-active" data-nav="1"></a>
+                 <a href="#" data-nav="2"></a>
+                 <a href="#" data-nav="3"></a>
+                 <a href="#" data-nav="4"></a>
+                 <a href="#" data-nav="5"></a>
+               </nav>
+               <div class="db-items-next-prev db-no-radius-left">
+                  <div class="db-item-prev"><ion-icon name="caret-back-outline"></ion-icon></div>
+                  <div class="db-item-counter"><span class="db-current-slide">01</span>/<span class="db-total-slide">05</span></div>
+                  <div class="db-item-next"><ion-icon name="caret-forward-outline"></ion-icon></div>
+               </div>  
+              </div>             
+            </div>
+            <div class="col-sm-12 col-lg-10 order-2 order-sm-2 order-md-2 db-slider">
+              <div class="db-slider-container db-full-height">
+                <ur class="db-slider-list db-full-height">
+                  <li class="db-slider-item db-slide-active" data-slide="1">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-2 order-lg-1">
+                        <div class="db-portfolio-item-info db-text-light db-fade-from-left">
+                          <h1 class="db-title-big db-mar-bottom-30 db-title">Do Conceito à Aplicação.</h1>
+                          <p class="db-mar-bottom-30">A Jornada de um Desenvolvedor em Constante Evolução.</p>
+                          <a href="portfolio/do-conceito-a-aplicação/index.html"><button class="db-btn-large db-btn-violet" >Ver projeto</button></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-1 order-lg-2">
+                        <div class="db-portfolio-item-thumb">
+                          <div class="db-portfolio-item-box d-none d-sm-none d-md-none d-lg-block db-scale-right"></div>
+                          <img src="images/portfolioend0001.png" alt="Neekem Projeto EV" title="Neekem Projeto EV" class="db-scale-up">
+                          <button class="db-btn db-btn-medium db-btn-dark" >Visitar site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="db-slider-item" data-slide="2">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-2 order-lg-1">
+                        <div class="db-portfolio-item-info db-text-light ">
+                          <h1 class="db-title-big db-mar-bottom-30 db-title">Projeto: Pomodoro db</h1>
+                          <p class="db-mar-bottom-30">Desenhando, estruturando e consolidando.</p>
+                          <a><button class="db-btn-large db-btn-violet">Ver projeto</button></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-1 order-lg-2">
+                        <div class="db-portfolio-item-thumb">
+                          <div class="db-portfolio-item-box d-none d-sm-none d-md-none d-lg-block"></div>
+                          <img src="images/projetoemandamento.png" alt="Neekem Projeto EV" title="Neekem Projeto EV">
+                          <button class="db-btn db-btn-medium db-btn-dark">Visitar site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="db-slider-item" data-slide="3">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-2 order-lg-1">
+                        <div class="db-portfolio-item-info db-text-light ">
+                          <h1 class="db-title-big db-mar-bottom-30 db-title">Projeto: Galeria Geek</h1>
+                          <p class="db-mar-bottom-30">Desenhando, estruturando e consolidando.</p>
+                          <a><button class="db-btn-large db-btn-violet">Ver projeto</button></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-1 order-lg-2">
+                        <div class="db-portfolio-item-thumb">
+                          <div class="db-portfolio-item-box d-none d-sm-none d-md-none d-lg-block"></div>
+                          <img src="images/projetoemandamento.png" alt="Neekem Projeto EV" title="Neekem Projeto EV">
+                          <button class="db-btn db-btn-medium db-btn-dark">Visitar site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="db-slider-item" data-slide="4">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-2 order-lg-1">
+                        <div class="db-portfolio-item-info db-text-light ">
+                          <h1 class="db-title-big db-mar-bottom-30 db-title">Projeto: Mockery of Experience!</h1>
+                          <p class="db-mar-bottom-30">Desenhando, estruturando e consolidando.</p>
+                          <a><button class="db-btn-large db-btn-violet">Ver projeto</button></a>
+
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-1 order-lg-2">
+                        <div class="db-portfolio-item-thumb">
+                          <div class="db-portfolio-item-box d-none d-sm-none d-md-none d-lg-block"></div>
+                          <img src="images/projetoemandamento.png" alt="Neekem Projeto EV" title="Neekem Projeto EV">
+                          <button class="db-btn db-btn-medium db-btn-dark">Visitar site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="db-slider-item" data-slide="5">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-sm-2 order-md-2 order-lg-1">
+                        <div class="db-portfolio-item-info db-text-light ">
+                          <h1 class="db-title-big db-mar-bottom-30 db-title">Projeto: Neekem EV </h1>
+                          <p class="db-mar-bottom-30">Desenhando, estruturando e consolidando.</p>
+                          <a><button class="db-btn-large db-btn-violet">Ver projeto</button></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-1 order-md-1 order-lg-2">
+                        <div class="db-portfolio-item-thumb">
+                          <div class="db-portfolio-item-box d-none d-sm-none d-md-none d-lg-block"></div>
+                          <img src="images/projetoemandamento.png" alt="Neekem Projeto EV" title="Neekem Projeto EV">
+                          <button class="db-btn db-btn-medium db-btn-dark">Visitar site <ion-icon name="arrow-redo-outline"></ion-icon></button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ur>
+                <div class="row"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+
+    <script src="js/anime.iife.min.js"></script>
+
+    <script>
+     const { animate } = anime;
+    </script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // Animando elementos com Waypoints
+     var myScrollDown = document.querySelector(".db-scroll-down");
+     var waypointScrollDown = new Waypoint({
+      element: myScrollDown,
+      handler: function () {
+       myScrollDown.classList.toggle("db-fade-out");
+     },
+      offset: "80%",
+     });
+    </script>
+
+
+
+  </body>
+</html>
