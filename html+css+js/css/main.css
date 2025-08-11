@@ -959,6 +959,15 @@ img.db-gallery-frame {
   position: relative;
 }
 
+.db-404 h1,
+.db-404 p {
+  text-align: center;
+}
+
+.db-404 .db-btn {
+  margin: 15px auto;
+}
+
 .db-title-xlarge {
   font-size: 90px;
 }
